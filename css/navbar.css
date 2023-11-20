@@ -1,0 +1,21 @@
+.dw-logo{
+  height: 55%;
+  margin: auto;
+}
+
+.navbar{
+  background-color: rgb(244,243,243);
+  height: 55px;
+  display: flex;
+  flex: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.contactMe-link{ 
+  margin-right:43px ;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 7px 20px;
+  background-color: rgb(17,23,39);
+  border-radius: 5px;
+}

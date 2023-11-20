@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <link rel="stylesheet" href="css/myproject.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div style="display: flex;margin-left: 50px; gap: 10px;">
+      <img src="dwlogotransparant.png" alt="" class="dw-logo">
+      <li style="display: flex;">
+        <ul style="margin: auto; font-weight: bold;"><a href="index.html" style="text-decoration: none; font-size: 18px; cursor: pointer; color: black; margin-right: 1px; padding-right: 0px;">
+          Home</a>
+        </ul>
+        <ul style="font-size: 18px; padding-left: 39px; font-weight: 400;">My project</ul>
+      </li>
+    </div>
+    <div class="contactMe-link">
+      <a href="contact.html" style="
+        text-decoration: none; 
+        color: white;
+        font-size: 14px;
+        ">Contact Me</a>
+    </div>
+  </nav>
+
+  <div class="background">
+    <h2>ADD MY PROJECT</h2>
+
+    <div class="main"> 
+      <form onsubmit="submitBlog(event)">
+
+      <label for="projectname">Project Name</label>
+      <input type="text" name="projectname" id="projectname">
+
+      <div class="date-input-box">
+
+        <div class="startdate-box">
+        <label for="startdate">Start Date</label>
+        <input type="text" name="startdate" id="startdate">
+        </div>
+        
+        <div class="enddate-box">
+        <label for="enddate">End Date</label>
+        <input type="text" name="enddate" id="enddate">
+        </div>
+      </div>
+
+      <label for="descbox">Description</label>
+      <textarea name="descbox" id="descbox" cols="40" rows="10"></textarea>
+
+      <p>Technologies</p>
+
+      <div class="checkbox-box">
+        <div style="display: flex; flex-direction:column ;">
+          <div style="display: flex; flex-direction:row-reverse; justify-content: space-between; margin-bottom: 15px;">
+            <label for="nodeJs" class="label-checkbox">Node Js</label>
+            <input type="checkbox" name="nodeJs" id="nodeJs" class="" value="1">
+          </div>
+          <div style="display: flex; flex-direction: row-reverse; justify-content: start; margin-bottom: 25px;">
+            <label for="reactJs">React Js</label>
+            <input type="checkbox" name="reactJs" id="reactJs" value="2">
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column;">
+          <div style="display: flex; flex-direction: row-reverse; justify-content: start; margin-bottom: 15px;">
+            <label for="bootstrap">Bootstrap</label>
+            <input type="checkbox" name="bootstrap" id="bootstrap">
+          </div>
+          <div style="display: flex; flex-direction: row-reverse; justify-content: start;margin-bottom: 25px;">
+            <label for="vueJs">Vue Js</label>
+            <input type="checkbox" name="vueJs" id="vueJs" value="4">
+          </div>
+        </div>
+      </div>
+
+      <label for="uploadCont">Upload Image
+      <div class="span-upload">
+      <p style="border: 1px solid black; margin: 0px; padding-left:5px; padding-right: 5px;">choose</p>
+      <input type="file" accept="image/*" name="uploadCont" id="uploadCont">
+      </div></label>
+
+      <button class="submit-button" > Submit </button>
+    </form>
+    </div>
+    <h2>MY PROJECT</h2>
+
+    <div class="blogPage">
+      <!-- <div class="sub-container">
+        <img src="${dataLog[i].image}" alt="Image 1">
+        <h3>${dataLog[i].name}</h3>
+        <p>${dataLog[i].date}</p>
+        <p>${dataLog[i].desc}</p>
+        <div class="logo">
+
+        </div>
+        <button>Button 1</button>
+        <button>Button 2</button>
+    </div> -->
+  </div>
+      
+    </div>
+
+  <script src="js/myproject.js"></script>
+</body>
+</html>
